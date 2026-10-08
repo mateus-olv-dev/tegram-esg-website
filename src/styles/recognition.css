@@ -1,9 +1,11 @@
 .recognition {
   display: grid;
-  grid-template-columns: 5fr 4fr;
-  gap: 40px;
+  grid-template-columns: 7fr 5fr;
+  gap: 72px;
   align-items: center;
   margin-top: 56px;
+  padding-top: 56px;
+  border-top: 1px solid var(--color-line);
 }
 
 .recognition__title {
@@ -11,17 +13,41 @@
   margin-bottom: 16px;
 }
 
+/* Largura limitada à resolução real do pôster (480px) para não ampliar nem borrar */
+.recognition__poster {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  justify-self: end;
+  border: 1px solid var(--color-line);
+  border-top: 6px solid var(--color-accent);
+  background: var(--color-white);
+  padding: 12px;
+}
+
+.recognition__poster img {
+  width: 100%;
+}
+
 .recognition__seal {
   display: flex;
   gap: 28px;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-line);
 }
 
 .recognition__seal img {
-  width: 170px;
+  width: 150px;
   border-radius: 50%;
   flex: none;
+}
+
+.recognition__seal-title {
+  margin: 0 0 8px;
+  font: 700 20px/1.25 var(--font-title);
+  color: var(--color-green);
 }
 
 .recognition p {
@@ -31,6 +57,14 @@
 @media (max-width: 900px) {
   .recognition {
     grid-template-columns: 1fr;
+    gap: 36px;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .recognition__poster {
+    justify-self: center;
+    max-width: 360px;
   }
 
   .recognition__seal {

@@ -83,25 +83,39 @@ export const governance = {
   title: 'Governança',
   intro: 'Nossa governança ESG é baseada em conformidade, gestão de riscos, segurança, transparência e melhoria contínua.',
   topics: [
-    'Cumprimento da legislação',
-    'Sistema de Gestão Integrado',
-    'Gestão de impactos ambientais',
-    'Prevenção de acidentes',
-    'Preparação para emergências',
-    'Capacitação',
-    'Melhoria contínua',
-    'Transparência',
+    { label: 'Cumprimento da legislação', icon: 'scale' },
+    { label: 'Sistema de Gestão Integrado', icon: 'layers' },
+    { label: 'Gestão de impactos ambientais', icon: 'leaf' },
+    { label: 'Prevenção de acidentes', icon: 'shield' },
+    { label: 'Preparação para emergências', icon: 'alert' },
+    { label: 'Capacitação', icon: 'graduation' },
+    { label: 'Melhoria contínua', icon: 'cycle' },
+    { label: 'Transparência', icon: 'eye' },
   ],
   safety: {
     title: 'Segurança em primeiro lugar',
     text: 'Participamos de treinamentos da CPATP e de simulados integrados de emergência, preparando equipes e operação para agir com rapidez e proteger pessoas.',
+  },
+  certifications: {
+    title: 'Certificações ISO',
+    text: 'Nosso Sistema de Gestão Integrado é certificado pela APCER nas normas ISO 9001, ISO 14001 e ISO 45001, reforçando o compromisso com qualidade, meio ambiente e segurança e saúde ocupacional.',
+    items: [
+      { id: 'iso-9001', label: 'ISO 9001', description: 'Gestão da qualidade', alt: 'Selo de certificação APCER ISO 9001' },
+      { id: 'iso-14001', label: 'ISO 14001', description: 'Gestão ambiental', alt: 'Selo de certificação APCER ISO 14001' },
+      { id: 'iso-45001', label: 'ISO 45001', description: 'Saúde e segurança ocupacional', alt: 'Selo de certificação APCER ISO 45001' },
+    ],
   },
   recognition: {
     title: 'Reconhecimento e carbono',
     text: 'O TEGRAM foi destaque ESG no Porto do Itaqui, com reconhecimentos em Meio Ambiente, Responsabilidade Social e na categoria Operadora Portuária.',
     awardsAlt: 'Troféus do prêmio ESG do Porto do Itaqui conquistados pelo TEGRAM',
     sealAlt: 'Selo Prata 2025 do Programa Brasileiro GHG Protocol',
-    sealText: 'Selo Prata 2025 do Programa Brasileiro GHG Protocol, com inventário completo de emissões.',
+    sealTitle: 'Mais um passo rumo a um futuro sustentável',
+    sealText: {
+      before: 'Conquistamos o Selo Prata do ',
+      emphasis: 'Programa Brasileiro GHG Protocol',
+      after: ', reconhecimento que atesta nosso compromisso com a transparência, a gestão das emissões de gases de efeito estufa e a construção de um futuro mais sustentável.',
+    },
   },
 };
 
