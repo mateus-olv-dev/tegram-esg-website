@@ -1,0 +1,6 @@
+.indicators__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px 40px; margin-top: 48px; }
+.indicator { border-top: 2px solid var(--color-accent); padding-top: 18px; }
+.indicator__value { display: block; font: 800 64px/1 var(--font-title); color: var(--color-accent); }
+.indicator__label { display: block; font: 700 22px/1.25 var(--font-title); color: var(--color-green); }
+.indicator__detail { display: block; font-size: 16px; }
+@media (max-width: 900px) { .indicators__grid { grid-template-columns: 1fr; } }

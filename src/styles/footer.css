@@ -1,0 +1,9 @@
+.footer { border-top: 1px solid var(--color-line); padding: 64px 0 32px; font-size: 16px; }
+.footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+.footer__logo { height: 36px; width: auto; margin-bottom: 14px; }
+.footer__title { font-size: 14px; margin-bottom: 14px; }
+.footer li { margin-bottom: 8px; }
+.footer a { text-decoration: none; }
+.footer a:hover { color: var(--color-accent); }
+.footer__copy { border-top: 1px solid var(--color-line); margin-top: 40px; padding-top: 20px; font-size: 14px; }
+@media (max-width: 900px) { .footer__grid { grid-template-columns: 1fr; } }

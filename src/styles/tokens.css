@@ -1,0 +1,18 @@
+/* Tokens de design: altere cores, fontes e espaçamentos somente aqui. */
+:root {
+  --color-bg: #F3F3F3;
+  --color-accent: #F5841F;
+  --color-green: #143331;
+  --color-title: #406D8A;
+  --color-text: #5F6973;
+  --color-line: #d9dcdf;
+  --color-white: #fff;
+
+  --font-title: 'Montserrat', system-ui, sans-serif;
+  --font-text: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
+
+  --container: 1160px;
+  --gutter: 24px;
+  --section-space: 96px;
+  --anchor-offset: 84px; /* altura do header sticky do site, para links âncora */
+}

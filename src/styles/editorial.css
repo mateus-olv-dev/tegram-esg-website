@@ -1,0 +1,18 @@
+.editorial { display: grid; grid-template-columns: 5fr 7fr; }
+.editorial__text { padding: 56px; }
+.editorial__title { font-size: clamp(28px, 3.4vw, 42px); margin-bottom: 18px; }
+.editorial__aside { display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 56px; }
+.editorial__fact dt { color: var(--color-accent); font: 700 15px var(--font-title); }
+.editorial__fact dd { margin: 0; }
+.editorial__text p { margin: 0; max-width: 60ch; }
+
+.editorial--dark { background: var(--color-green); color: #d5e2df; }
+.editorial--dark .editorial__title { color: var(--color-white); }
+.editorial--dark .editorial__aside { background: #0d2220; }
+
+.editorial--light { grid-template-columns: 1fr; border-left: 6px solid var(--color-green); }
+
+@media (max-width: 900px) {
+  .editorial { grid-template-columns: 1fr; }
+  .editorial__text, .editorial__aside { padding: 36px 24px; }
+}

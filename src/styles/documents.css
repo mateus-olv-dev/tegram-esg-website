@@ -1,0 +1,7 @@
+.documents { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; margin-top: 40px; }
+.document { display: flex; justify-content: space-between; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--color-line);
+  text-decoration: none; color: var(--color-title); font-weight: 600; transition: padding-left .2s; }
+.document:hover { padding-left: 10px; }
+.document__note { display: block; font-size: 16px; font-weight: 400; color: var(--color-text); }
+.document__cta { color: var(--color-accent); white-space: nowrap; }
+@media (max-width: 900px) { .documents { grid-template-columns: 1fr; } }
