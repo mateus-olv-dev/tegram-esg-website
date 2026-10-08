@@ -1,5 +1,27 @@
-.commitments__list { columns: 2; column-gap: 64px; margin-top: 40px; counter-reset: item; }
-.commitments__item { counter-increment: item; padding: 18px 0; border-bottom: 1px solid var(--color-line); break-inside: avoid;
-  color: var(--color-green); font: 600 19px var(--font-title); }
-.commitments__item::before { content: counter(item, decimal-leading-zero); color: var(--color-accent); margin-right: 18px; }
-@media (max-width: 900px) { .commitments__list { columns: 1; } }
+.commitments__list {
+  columns: 2;
+  column-gap: 64px;
+  margin-top: 40px;
+  counter-reset: item;
+}
+
+.commitments__item {
+  counter-increment: item;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-line);
+  break-inside: avoid;
+  color: var(--color-green);
+  font: 600 19px var(--font-title);
+}
+
+.commitments__item::before {
+  content: counter(item, decimal-leading-zero);
+  color: var(--color-accent);
+  margin-right: 18px;
+}
+
+@media (max-width: 900px) {
+  .commitments__list {
+    columns: 1;
+  }
+}

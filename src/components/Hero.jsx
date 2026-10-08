@@ -1,5 +1,5 @@
 import { hero } from '../data/content.js';
-import heroImage from '../assets/hero.jpg';
+import heroImage from '../assets/hero.png';
 import '../styles/hero.css';
 
 export default function Hero() {
